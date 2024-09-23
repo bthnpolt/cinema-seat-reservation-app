@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bi' tıkla bilet rezervasyonu</title>
+</head>
+
+<body>
+        //ödeme yapıldaktan sonra bilgi amaçlı alert yap!    
+        <div class="container">
+            <div class="screen"></div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat reserved"></div>
+                <div class="seat reserved"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat reserved"></div>
+                <div class="seat reserved"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+
+        <div class="movie-list">
+            <select id="movie">
+                <option disabled value="">Film Seçiniz</option>
+                <option value="200">movie1</option>
+                <option value="222">movie2</option>
+                <option value="250">movie3</option>
+            </select>
+        </div>
+
+        <ul class="info">
+            <li>
+                <div class="seat selected"></div>
+                <span>Seçili</span>
+            </li>
+            <li>
+                <div class="seat"></div>
+                <span>Boş</span>
+            </li>
+            <li>
+                <div class="seat reserved"></div>
+                <span>Dolu</span>
+            </li>
+           
+        </ul>
+
+        <p class="text">
+            <span class="count"></span>&nbspadet bilet için hesaplanan ücret&nbsp;<span class="amount"></span> TL.
+        </p>
+
+        <button class="btn-shopping" type="button">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+
+        <div class="modal-container">
+            <span class="close">&times;</span>
+            <h2>Ödeme Bilgileri</h2>
+            <div class="modal-content">
+                <label for="cardNumber">Kart Numarası:</label>
+                <input id="cardNumber" type="number" required placeholder="xxxx-xxxx-xxxx-xxxx" >
+                <label for="cartName">Kartın Üzerindeki İsim-Soyisim:</label>
+                <input id="cartName"  type="text" required placeholder="isim-soyisim..." >
+                <label for="cardDate">Kartın Son Kullanım tarihi:</label>
+                <input required id="cardDate" type="text" placeholder="03/26">
+                <label for="cardSecurityNumber">Kartınızın 3 Haneli Güvenlik Numarası:</label>
+                <input type="number" id="cardSecurityNumber" placeholder="123">
+                <button class="btn-shopping-modal" type="submit" id="btn-modal">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
