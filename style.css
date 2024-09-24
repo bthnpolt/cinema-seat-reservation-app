@@ -84,6 +84,7 @@ select{
     color: #f6eb6f ;
 }
 .btn-shopping{
+    display: none;
     width: 10%;
     height: 30px;
     margin-top: 30px;
@@ -100,7 +101,7 @@ i{
     transform: scale(1.2);
 }
 .modal-container{
-    display: none;
+   display: none;
    background-color: #fff;
    position: absolute;
    border-radius: 10px;
@@ -148,4 +149,28 @@ input{
 .btn-shopping-modal:hover{
     cursor: pointer;
     transform: scale(1.2);
+}
+.successAlerts{
+    display:none;
+    background-color: #DFF2BF;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.success{
+    text-align: center;
+    color: #4F8A10;
+    font-size: 17px;
+}
+.warningAlerts{
+    display: none;
+    background-color: #FFBABA;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.warning{
+    text-align: center;
+    color: #D8000C;
+    font-size: 17px;
 }
